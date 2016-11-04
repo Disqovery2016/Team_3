@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Fund My project</title>
+<meta charset="iso-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="../layout/styles/main.css" rel="stylesheet" type="text/css" media="all">
+<link href="../layout/styles/mediaqueries.css" rel="stylesheet" type="text/css" media="all">
+<script type = "text/javascript" 
+         src = "http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+</script>
+<!--[if lt IE 9]>
+<link href="../layout/styles/ie/ie8.css" rel="stylesheet" type="text/css" media="all">
+<script src="../layout/scripts/ie/css3-mediaqueries.min.js"></script>
+<script src="../layout/scripts/ie/html5shiv.min.js"></script>
+<![endif]-->
+</head>
+<body class="">
+<div class="wrapper row1">
+  <header id="header" class="full_width clear">
+    <div id="hgroup">
+      <h1><a href="../index.html">Pulse It</a></h1>
+    </div>
+    <div id="header-contact">
+      <ul class="list none">
+      <li><a href="#" id="userdet1">Pulseit@gmail.com</a></li>
+      </ul>
+    </div>
+  </header>
+</div>
+<!-- ################################################################################################ -->
+<div class="wrapper row2">
+  <nav id="topnav">
+  <ul class="clear">
+      <li class="active"><a href="../index.html" title="Homepage">Homepage</a></li>
+      <li class="last-child"><a href="signup.html" title="A Very Long Link Text" id="signuplink">Sign Up</a></li>
+      <li class="last-child"><a href="signin.html" title="A Very Long Link Text" id="signinlink">Sign In</a></li>
+      <li class="last-child"><a title="Input New Project" id="myprojects">Input Patient History</a></li>
+      <!--<li class="last-child"><a href="page/projdisplay.php" title="A Very Long Link Text" id="myprojects">My Projects</a></li>-->
+    </ul>
+  </nav>
+</div>
+<!-- content -->
+<div class="wrapper row3">
+  <div id="container">
+    <!-- ################################################################################################ -->
+    <div id="contact" class="clear">
+      <div class="one_half first">
+        <h1>Sign In</h1>
+         <div id="respond">
+          
+            <div class="form-input clear">
+              <label class="one_half" for="email">Email <span class="required">*</span><br>
+                <input type="text" name="email" id="lemail" value="" size="22">
+              </label>
+               <label class="one_half" for="password">Password <span class="required">*</span><br>
+                <input type="password" name="password" id="lpassword">
+            <p>
+              <button onclick="login()">SUBMIT</button>
+              &nbsp;
+              <input type="reset" value="Reset">
+            </p>
+            <p id="logres1"></p>
+         
+        </div>
+      </div>
+    </div>
+    <!-- ################################################################################################ -->
+    <div class="clear"></div>
+  </div>
+</div>
+<!-- Footer -->
+<!-- Footer -->
+<div class="wrapper row2">
+  <div id="footer" class="clear">
+    <div class="one_quarter first">
+      <h2 class="footer_title">Pulse It</h2>
+      <nav class="footer_nav">
+        <ul class="nospace">
+          <li><a href="../index.html">Home Page</a></li>
+          <li><a href="">My Health</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+<div class="wrapper row4">
+   <div id="copyright" class="clear">
+    <p class="fl_left">Copyright 2016 - All Rights Reserved - <a href="#">Pulse-.com</a></p>
+  </div>
+</div>
+</div>
+<!-- Scripts -->
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="http://code.jquery.com/ui/1.10.1/jquery-ui.min.js"></script>
+<script>window.jQuery || document.write('<script src="../layout/scripts/jquery-latest.min.js"><\/script>\
+<script src="../layout/scripts/jquery-ui.min.js"><\/script>')</script>
+<script>jQuery(document).ready(function($){ $('img').removeAttr('width height'); });</script>
+<script src="../layout/scripts/jquery-mobilemenu.min.js"></script>
+<script src="../layout/scripts/custom.js"></script>
+
+    <script type="text/javascript">
+        function login(){
+            var pass = document.getElementById("lpassword").value;
+            var email = document.getElementById("lemail").value;
+
+            $.post("login.php", {password: pass, email: email, c:1},
+            function(data){                
+                if(parseInt(data) == 2){
+                  window.location = "http://localhost/Hospital/fundmyexperiment/rs/index.html";
+                }else{ 
+                  $('#logres1').html(data);
+                }
+            }); 
+        }
+        function signup(){
+            var pass = document.getElementById("spassword").value;
+            var email = document.getElementById("semail").value;
+            var name = document.getElementById("sname").value;
+            alert(pass+email+name);
+
+            $.post("login.php", {name: name, password: pass, email: email, c:2},
+            function(data){
+                $('#logres2').html(data);
+            }); 
+        }
+    </script>
+
+</body>
+</html>

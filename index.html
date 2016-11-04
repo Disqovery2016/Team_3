@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pulse It</title>
+<meta charset="iso-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="layout/styles/main.css" rel="stylesheet" type="text/css" media="all">
+<link href="layout/styles/mediaqueries.css" rel="stylesheet" type="text/css" media="all">
+<link rel="stylesheet" type="text/css" href="css/dropdown.css" />
+<!--[if lt IE 9]>
+<link href="layout/styles/ie/ie8.css" rel="stylesheet" type="text/css" media="all">
+<script src="layout/scripts/ie/css3-mediaqueries.min.js"></script>
+<script src="layout/scripts/ie/html5shiv.min.js"></script>
+<![endif]-->
+<!-- Slider -->
+<link href="layout/scripts/responsiveslides.js-v1.53/responsiveslides.css" rel="stylesheet" type="text/css" media="all">
+<link href="layout/scripts/responsiveslides.js-v1.53/responsiveslides.css" rel="stylesheet" type="text/css" media="all">
+<script type = "text/javascript" 
+         src = "http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+<script type = "text/javascript" 
+         src = "http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+
+</script>
+</head>
+<body class="">
+<div class="wrapper row1">
+  <header id="header" class="full_width clear">
+    <div id="hgroup">
+      <h1><a href="index.html">Pulse It</a></h1>
+    </div>
+    <div id="header-contact">
+      <ul class="list none">
+      <li><a href="#" id="userdet1">Pulseit@gmail.com</a></li>
+ <div class="dropdown" id="drpdwn">
+  <button class="dropbtn" id="userdet2"></button>
+  <div class="dropdown-content">
+  	<a href="profile.html">Profile</a>
+    <a href="logout.php">LogOut</a>
+  </div>
+</div>
+      </ul>
+    </div>
+  </header>
+</div>
+<!-- ################################################################################################ -->
+<div class="wrapper row2">
+  <nav id="topnav">
+    <ul class="clear">
+      <li class="active"><a href="index.html" title="Homepage">Homepage</a></li>
+      <li class="last-child"><a href="page/signup.html" title="A Very Long Link Text" id="signuplink">Sign Up</a></li>
+      <li class="last-child"><a href="page/signin.html" title="A Very Long Link Text" id="signinlink">Sign In</a></li>
+      <li class="last-child"><a href="page/pre.php" title="Input New Project" id="myprojects">Input Patient History</a></li>
+      <!--<li class="last-child"><a href="page/projdisplay.php" title="A Very Long Link Text" id="myprojects">My Projects</a></li>-->
+    </ul>
+  </nav>
+</div>
+<!-- ################################################################################################ -->
+<div class="wrapper row5">
+  <!-- ################################################################################################ -->
+  <div class="rslides_container clear">
+    <ul class="rslides clear" id="rslides">
+      <li><img src="images/demo/slider/12.jpg" alt=""></li>
+    </ul>
+  </div>
+  <!-- ################################################################################################ -->
+  <div class="clear"></div>
+</div>
+<!-- content -->
+<div class="wrapper row3">
+  <div id="container">
+    <!-- ################################################################################################ -->
+      <section class="last clear">
+        <h2>Nearest Hospital</h2>
+        <article class="one_quarter first"><a href="#">
+          <div class="push10"><img src="" alt="" name="projimg" style="width:250px; height:200px;"></div>
+          <p class="nostart bold font-medium" name="projname">Name</p>
+          <p class="nostart bold font-medium" name="projfundexp">Location</p>
+          <p class="nostart bold font-medium" name="projfundraised">Speciality</p>
+          </a></article>
+        <article class="one_quarter"><a href="#">
+          <div class="push10"><img src="" alt="" name="projimg" style="width:250px; height:200px;"></div>
+          <p class="nostart bold font-medium" name="projname">Name</p>
+          <p class="nostart bold font-medium" name="projfundexp">Location</p>
+          <p class="nostart bold font-medium" name="projfundraised">Speciality</p>
+          </a></article>
+        <article class="one_quarter"><a href="#">
+          <div class="push10"><img src="" alt="" name="projimg" style="width:250px; height:200px;"></div>
+          <p class="nostart bold font-medium" name="projname">name</p>
+          <p class="nostart bold font-medium" name="projfundexp">Location</p>
+          <p class="nostart bold font-medium" name="projfundraised">Specaility</p>
+          </a></article>
+        <article class="one_quarter"><a href="#">
+          <div class="push10"><img src="" alt="" name="projimg" style="width:250px; height:200px;"></div>
+          <p class="nostart bold font-medium" name="projname">Name</p>
+          <p class="nostart bold font-medium" name="projfundexp">Location</p>
+          <p class="nostart bold font-medium" name="projfundraised">Specaility</p>
+          </a></article>
+      </section>
+    </div>
+    <!-- ################################################################################################ -->
+    <div class="clear"></div>
+  </div>
+</div>
+<!-- Footer -->
+<div class="wrapper row2">
+  <div id="footer" class="clear">
+    <div class="one_quarter first">
+      <h2 class="footer_title">Pulse It</h2>
+      <nav class="footer_nav">
+        <ul class="nospace">
+          <li><a href="#">Home Page</a></li>
+          <li><a href="page/education.html">Hospitals</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+<div class="wrapper row4">
+  <div id="copyright" class="clear">
+    <p class="fl_left">Copyright 2016 - All Rights Reserved - <a href="#">Pulse-.com</a></p>
+  </div>
+</div>
+<!-- Scripts -->
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="http://code.jquery.com/ui/1.10.1/jquery-ui.min.js"></script>
+<script>window.jQuery || document.write('<script src="layout/scripts/jquery-latest.min.js"><\/script>\
+<script src="layout/scripts/jquery-ui.min.js"><\/script>')</script>
+<script>jQuery(document).ready(function($){ $('img').removeAttr('width height'); });</script>
+<script src="layout/scripts/responsiveslides.js-v1.53/responsiveslides.min.js"></script>
+<script src="layout/scripts/jquery-mobilemenu.min.js"></script>
+<script src="layout/scripts/custom.js"></script>
+
+   <script type="text/javascript">
+
+        window.onload = function() {
+            getrandomproj();
+            getuserdet();
+        };
+
+        function getrandomproj(){
+            var i=0;
+            $.post("projects.php", {c: 1},
+              function(data){
+                var proj = data.split("%");
+                
+                var proj0 = proj[0].split("-"); var proj1 = proj[1].split("-"); var proj2 = proj[2].split("-");
+                var proj3 = proj[3].split("-");
+
+                  document.getElementsByName("projimg")[0].src = "proj_img/"+proj0[0]+".jpg";
+                  document.getElementsByName("projname")[0].innerHTML = proj0[1];
+                  document.getElementsByName("projfundexp")[0].innerHTML = proj0[2];
+                  document.getElementsByName("projfundraised")[0].innerHTML = proj0[3];
+
+                  document.getElementsByName("projimg")[1].src = "proj_img/"+proj1[0]+".jpg";
+                  document.getElementsByName("projname")[1].innerHTML = proj1[1];
+                  document.getElementsByName("projfundexp")[1].innerHTML = proj1[2];
+                  document.getElementsByName("projfundraised")[1].innerHTML = proj1[3];
+
+                  document.getElementsByName("projimg")[2].src = "proj_img/"+proj2[0]+".jpg";
+                  document.getElementsByName("projname")[2].innerHTML = proj2[1];
+                  document.getElementsByName("projfundexp")[2].innerHTML = proj2[2];
+                  document.getElementsByName("projfundraised")[2].innerHTML = proj2[3];
+
+                  document.getElementsByName("projimg")[3].src = "proj_img/"+proj3[0]+".jpg";
+                  document.getElementsByName("projname")[3].innerHTML = proj3[1];
+                  document.getElementsByName("projfundexp")[3].innerHTML = proj3[2];
+                  document.getElementsByName("projfundraised")[3].innerHTML = proj3[3];
+            }); 
+        }
+
+        function getuserdet(){
+             $.post("projects.php", {c: 4},
+              function(data){
+              	if(!data){
+              		document.getElementById("drpdwn").style.display = "none";
+              		document.getElementById("userdet1").style.display = "block"; 
+                  document.getElementById("myprojects").style.display = "none";
+              	}else{
+              		document.getElementById("userdet1").style.display = "none"; 
+                  document.getElementById("myprojects").style.display = "block";
+              		document.getElementById("drpdwn").style.display = "block";
+              		document.getElementById("userdet2").innerHTML = data;
+              		document.getElementById("signinlink").style.display = "none"; document.getElementById("signuplink").style.display = "none";
+              	}
+              })       	
+        }
+
+    </script>
+
+</body>
+</html>
