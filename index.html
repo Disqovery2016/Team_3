@@ -49,7 +49,9 @@
       <li class="active"><a href="index.html" title="Homepage">Homepage</a></li>
       <li class="last-child"><a href="page/signup.html" title="A Very Long Link Text" id="signuplink">Sign Up</a></li>
       <li class="last-child"><a href="page/signin.html" title="A Very Long Link Text" id="signinlink">Sign In</a></li>
-      <li class="last-child"><a href="page/pre.php" title="Input New Project" id="myprojects">Input Patient History</a></li>
+      <li class="last-child"><a href="page/pre.php" title="Input New Project" id="myprojects">Input History</a></li>
+      <li class="last-child"><a href="page/History.html" title="My History" id="myhistory">My History</a></li>
+      <li class="last-child"><a href="page/tips.html" title="Tips" id="tips">Tips For My Health</a></li>
       <!--<li class="last-child"><a href="page/projdisplay.php" title="A Very Long Link Text" id="myprojects">My Projects</a></li>-->
     </ul>
   </nav>
@@ -109,7 +111,6 @@
       <nav class="footer_nav">
         <ul class="nospace">
           <li><a href="#">Home Page</a></li>
-          <li><a href="page/education.html">Hospitals</a></li>
         </ul>
       </nav>
     </div>
@@ -175,9 +176,13 @@
               		document.getElementById("drpdwn").style.display = "none";
               		document.getElementById("userdet1").style.display = "block"; 
                   document.getElementById("myprojects").style.display = "none";
+                  document.getElementById("myhistory").style.display = "none";
+                  document.getElementById("tips").style.display = "none";
               	}else{
               		document.getElementById("userdet1").style.display = "none"; 
                   document.getElementById("myprojects").style.display = "block";
+                  document.getElementById("myhistory").style.display = "block";
+                  document.getElementById("tips").style.display = "block"
               		document.getElementById("drpdwn").style.display = "block";
               		document.getElementById("userdet2").innerHTML = data;
               		document.getElementById("signinlink").style.display = "none"; document.getElementById("signuplink").style.display = "none";
